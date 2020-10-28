@@ -1,0 +1,83 @@
+.header {
+  border-bottom: 1px solid #bfbfbf;
+  box-sizing: border-box;
+  padding: 22px 18px 22px 25px;
+  position: relative;
+  width: 100%;
+  padding-right: 40px;
+}
+
+.header:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.left-menu {
+  overflow: visible;
+  display: block;
+  float: left;
+  position: static;
+  width: auto;
+  max-height: none;
+  top: 50px;
+}
+
+.nav-link {
+  float: left;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  border: 0;
+  margin-right: 30px;
+  position: relative;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: rgb(31, 69, 150);
+}
+
+.attention {
+  color: rgb(209, 70, 28);
+}
+
+.right-menu {
+  display: block;
+  float: right;
+}
+
+/* Nav Products */
+
+.nav-products {
+  position: absolute;
+  width: 100%;
+  top: 66px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  background-color: rgb(163, 13, 13);
+  transition: height 0.4s linear;
+}
+
+.collapsed {
+  height: 0;
+  overflow: hidden;
+}
