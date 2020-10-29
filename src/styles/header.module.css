@@ -68,16 +68,170 @@
 .nav-products {
   position: absolute;
   width: 100%;
-  top: 66px;
+  top: 100%;
   left: 0;
   margin: 0;
   padding: 0;
-  height: 400px;
-  background-color: rgb(163, 13, 13);
+  height: 0px;
+  background-color: #f7f7f7;
   transition: height 0.4s linear;
+  overflow: hidden;
 }
 
-.collapsed {
-  height: 0;
-  overflow: hidden;
+.products-open {
+  border-bottom: 1px solid #bfbfbf;
+  border-top: 1px solid #bfbfbf;
+}
+
+.nav-arrow {
+  background-image: url(https://www.harrys.com/assets/nav-caret-0cb49534cddd86dc63074b5ab7072d6fc6e4f99a8ce77fff3aef3b3499a319aa.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 10px;
+  margin-left: 6px;
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+.arrow-open {
+  transform: rotate(180deg);
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.product-grid::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.grid-link {
+  max-width: 175px;
+  display: inline-grid;
+  padding: 0;
+
+  padding-top: 0;
+  margin-left: 25px;
+  margin-top: 25px;
+  float: none;
+  position: relative;
+}
+
+.grid-link-footer {
+  width: 100%;
+  padding-bottom: 0;
+  border: none;
+  position: relative;
+  float: left;
+  text-decoration: underline;
+  min-height: 1px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid-link-footer-text {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  line-height: 22px;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  padding-bottom: 0;
+  text-decoration: none;
+  color: #025f9c;
+  margin-bottom: 15px;
+  margin-top: -20px;
+  display: inline-block;
+}
+
+.grid-image-container {
+  max-width: 175px;
+  position: relative;
+  display: inline-grid;
+  margin: auto;
+}
+
+.grid-image {
+  max-width: 175px;
+  position: relative;
+  display: inline-grid;
+  margin: auto;
+}
+
+.grid-link-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  text-transform: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.grid-link-text:hover {
+  opacity: 0;
+}
+
+/* Banner */
+
+.banner {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  height: 70px;
+  background-color: #eff6fb;
+  padding-top: 10px;
+}
+
+.banner-header {
+  margin: 0;
+  padding-top: 0;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+}
+
+.banner-text {
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+  .products-open {
+    height: 400px;
+  }
+
+  .product-grid {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products-open {
+    height: 240px;
+  }
+
+  .product-grid {
+    width: 100%;
+  }
 }
