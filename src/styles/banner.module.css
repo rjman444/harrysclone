@@ -1,0 +1,53 @@
+.banner {
+  min-height: 550px;
+  text-align: center;
+}
+
+.header {
+  font-size: 25px;
+  display: inline-block;
+  margin: 70px 0;
+  width: 310px;
+  line-height: 40px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1181px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.itemContent {
+  max-width: 75%;
+  margin: 25px 0;
+}
+
+.itemHeader {
+  font-weight: 700;
+  margin: 10px 0;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+}
+
+.itemDescription {
+  line-height: 23px;
+  letter-spacing: 1.4px;
+  font-size: 15px;
+}
+
+.itemContent > img {
+  height: 60px;
+  width: 60px;
+  display: inline;
+}
