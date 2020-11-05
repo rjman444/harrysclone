@@ -10,12 +10,28 @@ function ImageGallery() {
 
   const [currentImage, setImage] = useState(0);
 
+  const selected = {
+    border: "1px solid black",
+  };
+
   return (
     <>
       <img src={images[currentImage]} alt="" />
-      <span className={styles.imgBtn} onClick={() => setImage(0)} />
-      <span className={styles.imgBtn} onClick={() => setImage(1)} />
-      <span className={styles.imgBtn} onClick={() => setImage(2)} />
+      <span
+        className={`${styles.imgBtn} ${styles.green}`}
+        onClick={() => setImage(0)}
+        style={currentImage === 0 ? selected : {}}
+      />
+      <span
+        className={`${styles.imgBtn} ${styles.orange}`}
+        onClick={() => setImage(1)}
+        style={currentImage === 1 ? selected : {}}
+      />
+      <span
+        className={`${styles.imgBtn} ${styles.blue}`}
+        onClick={() => setImage(2)}
+        style={currentImage === 2 ? selected : {}}
+      />
     </>
   );
 }

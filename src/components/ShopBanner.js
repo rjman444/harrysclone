@@ -28,18 +28,13 @@ const ShopBanner = () => {
         </Card>
         <Card
           gallery
-          image={[
-            "https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/01141d9b8286cc7d1a1700e3ef7b966374567b72.jpg",
-            "https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/9630bbd9f075a4fcec8cd7c8a9c21d9201069f73.jpg",
-            "https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/b870400ae41aef1688e3ef7d2757f23ed23becdc.jpg",
-          ]}
           tooltip={{
-            header: "What's Good About Them",
+            header: "What's Inside The Set ",
             content: [
-              "New! Upgrade to our sharpest blades ever for the same fair price",
-              "Engineered in our German factory from high-quality Swedish steel",
-              "Each razor cartridge features a flex hinge, so blades follow the contours of your face",
-              "Lubricating strip...",
+              "Our Truman handle, featuring a weighted core and textured rubber grip.",
+              "Three German-engineered blade cartridges, each with a flex hinge and lubricating strip.",
+              "Foaming Shave Gel for a rich lather.",
+              "A travel cover to protect your blades...",
             ],
           }}
         >
@@ -50,12 +45,12 @@ const ShopBanner = () => {
             "https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/4ab1dca1384f4086f062ca1b9a43b6710519def4.jpg"
           }
           tooltip={{
-            header: "What's Good About Them",
+            header: "What's Good About It",
             content: [
-              "New! Upgrade to our sharpest blades ever for the same fair price",
-              "Engineered in our German factory from high-quality Swedish steel",
-              "Each razor cartridge features a flex hinge, so blades follow the contours of your face",
-              "Lubricating strip...",
+              "Cleans hair without stripping important natural oils",
+              "Hydrating and conditioning enough for daily use",
+              "Good for all hair types",
+              "Formulated for men",
             ],
           }}
         >

@@ -15,6 +15,7 @@ function App() {
       <Tile content={data.hero2} />
       <Tile content={data.hero3} />
       <ShopBanner />
+      <Banner />
     </>
   );
 }

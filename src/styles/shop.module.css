@@ -40,7 +40,7 @@
 }
 
 .card > p {
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 15px;
 }
 
@@ -97,13 +97,17 @@
   line-height: 25px;
   border-radius: 2px;
   position: absolute;
-  top: 40px;
+  top: 70px;
   left: -15px;
   width: 108%;
-  height: 300px;
   -webkit-box-shadow: 1px 1px 5px 2px rgb(228, 228, 228);
   -moz-box-shadow: 1px 1px 5px 2px rgb(228, 228, 228);
   box-shadow: 1px 1px 5px 2px rgb(228, 228, 228);
+  font-size: 14px;
+}
+
+.cardHeader {
+  text-transform: uppercase;
 }
 
 .cardInfoShow {
@@ -122,6 +126,17 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-color: red;
   border-radius: 100%;
+}
+
+.green {
+  background-color: #06a594;
+}
+
+.orange {
+  background-color: rgb(254, 131, 68);
+}
+
+.blue {
+  background-color: rgb(22, 102, 166);
 }

@@ -1,0 +1,18 @@
+.itemHeader {
+  font-weight: 700;
+  margin: 10px 0;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+}
+
+.itemDescription {
+  line-height: 23px;
+  letter-spacing: 1.4px;
+  font-size: 15px;
+}
+
+.itemContent > img {
+  height: 60px;
+  width: 60px;
+  display: inline;
+}
